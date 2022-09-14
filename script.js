@@ -45,6 +45,7 @@ const typeController = (e) => {
   if (newLetterCorrect) {
     display.innerHTML += `<span class="green">${newLetter === " " ? "▪" : newLetter}</span>`;
   } else {
+    errorCount++;
     display.innerHTML += `<span class="red">${newLetter === " " ? "▪" : newLetter}</span>`;
   }
 
@@ -70,6 +71,7 @@ const gameOver = () => {
   const timeTaken = (finishTime - startTime) / 1000;
 
   // show result modal
+
   resultModal.innerHTML = "";
   resultModal.classList.toggle("hidden");
   modalBackground.classList.toggle("hidden");
@@ -95,6 +97,7 @@ const gameOver = () => {
 };
 
 const closeModal = () => {
+  errorCount = 0;
   modalBackground.classList.toggle("hidden");
   resultModal.classList.toggle("hidden");
 };
@@ -114,7 +117,7 @@ const start = () => {
       // -------------- START TYPING -----------------
       document.addEventListener("keydown", typeController);
       countdownOverlay.style.display = "none";
-      console.log(countdownOverlay.classList)
+      //console.log(countdownOverlay.classList)
       display.classList.remove("inactive");
 
       clearInterval(startCountdown);
