@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BLOGS</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+</head>
+</head>
+
+<body>
+    <header class="text-center">
+        <h1>Welcome to Blogs</h1>
+
+    </header>
+    <main class="container my-5">
+        <article>
+            <h3>Question-1: What is the difference between Local storage and Session storage ?</h3>
+            <h3>Answer :</h3>
+            <p>
+            <h4>Local Storage</h4>
+            <p>
+                This read-only interface property provides access to the Document’s local storage object, the stored
+                data is stored across browser sessions. Similar to sessionStorage, except that localStorage data gets
+                cleared when the page session ends – that is when the page is closed. It is cleared when the last
+                “private” tab of a browser is closed (localStorage data for a document loaded in a private browsing or
+                incognito session)
+            </p>
+            <h4>Session Storage
+            </h4>
+            <p>
+                Session Storage objects can be accessed using the sessionStorage read-only property. The difference
+                between sessionStorage and localStorage is that localStorage data does not expire, whereas
+                sessionStorage data is cleared when the page session ends.
+                <br>
+                <br>
+                A unique page session gets created once a document is loaded in a browser tab. Page sessions are valid
+                for only one tab at a time. Pages are only saved for the amount of time that the tab or the browser is
+                open; they do not persist after the page reloads and restores. A new session is created each time a tab
+                or window is opened; this is different from session cookies. Each tab/window that is opened with the
+                same URL creates its own sessionStorage.When you duplicate a tab, the sessionStorage from the original
+                tab is copied to the duplicated tab. Closing a window/tab ends the session and clears sessionStorage
+                objects.
+            </p>
+            The difference between Local storage and Session storage is given in the table below:
+            </p>
+            <style>
+                .demo {
+                    border: 1px solid #C0C0C0;
+                    border-collapse: collapse;
+                    padding: 5px;
+                }
+
+                .demo th {
+                    border: 1px solid #C0C0C0;
+                    padding: 5px;
+                    background: #F0F0F0;
+                }
+
+                .demo td {
+                    border: 1px solid #C0C0C0;
+                    padding: 5px;
+                }
+            </style>
+            <table class="demo">
+                <caption><br></caption>
+                <thead>
+                    <tr>
+                        <th>Local Storage</th>
+                        <th>Session Storage</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>&nbsp;The storage capacity of local storage is 5&nbsp;MB/10&nbsp;MB</td>
+                        <td>&nbsp;The storage capacity of session storage is 5&nbsp;MB</td>
+                    </tr>
+                    <tr>
+                        <td>&nbsp;As it is not session-based, it must be deleted via JavaScript or manually</td>
+                        <td>&nbsp;It’s session-based and works per window or tab. This means that data is stored only
+                            for the duration of a session, i.e., until the browser (or tab) is closed</td>
+                    </tr>
+                    <tr>
+                        <td>&nbsp;The client&nbsp; can only read local storage</td>
+                        <td>&nbsp;The client can only read local storage</td>
+                    </tr>
+                    <tr>
+                        <td>&nbsp;There is no transfer of data to the server</td>
+                        <td>&nbsp;There is no transfer of data to the server</td>
+                    </tr>
+                    <tr>
+                        <td>&nbsp;There are fewer old browsers that support it</td>
+                        <td>&nbsp;There are fewer old browsers that support it</td>
+                    </tr>
+                <tbody>
+            </table>
+
+        </article>
+
+    </main>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+        crossorigin="anonymous"></script>
+</body>
+
+</body>
+
+</html>
